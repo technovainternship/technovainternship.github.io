@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Certificate | TechNova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (same as other pages) -->
+<nav>
+  <a href="index.html" class="logo-link">
+    <img src="images/logo.jpg" alt="TechNova Logo" class="nav-logo">
+    <span class="logo-text">TechNova</span>
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="domains.html">Domains</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<!-- VERIFICATION SECTION -->
+<section class="verify-page">
+
+  <div class="verify-card">
+
+    <!-- SHINING BRAND -->
+    <div class="verify-brand">
+      TECHNOVA
+    </div>
+
+    <h1>Certificate Verification</h1>
+
+    <p class="subtitle">
+      Verify the authenticity of a <strong>TechNova Internship Certificate</strong>
+    </p>
+
+    <!-- FORM -->
+    <div class="verify-form">
+      <input 
+        type="text" 
+        id="certId" 
+        placeholder="Enter Certificate ID (e.g. TN/DM/1501)"
+      />
+
+      <button class="btn-verify" onclick="verifyCert()">
+        Verify Certificate
+      </button>
+    </div>
+
+    <!-- RESULT -->
+    <div id="result" class="verify-result"></div>
+
+    <!-- TRUST NOTE -->
+    <div class="trust-note">
+      <i class="fas fa-shield-check"></i>
+      Secure & tamper-proof certificate verification system
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2024 TechNova Internship Program</p>
+</footer>
+
+<!-- JS -->
+<script src="verify.js"></script>
+
+</body>
+</html>
